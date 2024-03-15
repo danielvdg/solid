@@ -1,12 +1,13 @@
 package solid.dependencyInversion.model;
 
 import solid.dependencyInversion.service.LoggerService;
-/**
- * Os módulos de alto nível não devem depender de módulos de baixo nível.
- * Ambos devem depender de abstrações
- */
+
 public class BankAccount {
     private double balance;
+    /*
+     * Os módulos de alto nível não devem depender de módulos de baixo nível.
+     *  Ambos devem depender de abstrações
+     */
     private LoggerService logger;
 
     public BankAccount(LoggerService logger) {
